@@ -1,0 +1,16 @@
+Partials are the component like header , footer which is repeated in every page 
+
+step to acquire partials => 
+
+1) require the hbs from hbs 
+
+2) create partials using the method 
+    hbs.registerPartials(PartialFolderPath);
+
+3) create a file in partial folder 
+    eg.
+        header.hbs
+
+4) require the file in any page using 
+    eg.
+        {{>filename}} // filename = header.hbs or header 

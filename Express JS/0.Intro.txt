@@ -1,0 +1,16 @@
+/*
+
+Express JS :- 
+
+Express js is node js framework it is popular framework as of now. ( the most starred on npm )
+
+Express js is web application framework that provide you with simple API to builds website webapp and backend.
+
+
+Important :-
+   Q. Why do we actually need Express.js ? How it is useful for us tto use with Node.js ?
+    Ans :-
+        Try to write a small REST API server in plain Node.js (that is, using only core modules) and then in Express.js.
+        The latter will take you 5-10x less time and lines of code.
+
+*/

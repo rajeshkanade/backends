@@ -1,0 +1,15 @@
+{
+  "name": "14---global-npm-module",
+  "version": "1.0.0",
+  "description": "THis is used to install global module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajesh kanade",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "validator": "^13.12.0"
+  }
+}

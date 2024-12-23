@@ -1,0 +1,15 @@
+// To count the document in the collection we use countDocuments() method. 
+eg. 
+    const countDocuments = async () =>{
+    const result = await Todo.countDocuments();
+    console.log(result)
+  }
+
+
+// sort the document we use sort() method 
+  const sortDocuments = async () =>{
+    const result = await Todo.find().sort({title : 1});
+    console.log(result)
+  }
+
+  // sortDocuments();

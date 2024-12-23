@@ -1,0 +1,1 @@
+Hello welcome to the File , Created Using the file System module (from file 5-fileSystem.js) This text is added at the end of the file using appendFileSync method of FileSystem module

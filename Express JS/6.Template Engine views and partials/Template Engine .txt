@@ -1,0 +1,48 @@
+A template engine enables you to use static template files in your application.
+At runtime, the template engine replaces variablees file with actual values, and transforms thre template into an HTML file send to the client. This approach makes it easier to design an HTML page.
+
+SOme popular template enginees that work with express are Pug, Mustache, and EJS.
+The Express application generator uses jade as its default, but it also supports several others. 
+
+See template Engines( Express wiki) for a list of template engines you can use with express.
+See also comparing Javasript Templating Engines : Jage, Mustache, Dust and More. 
+
+
+Settup the Template Engine in Program 
+steps =>
+
+1) Install the Template Engine => npm install hbs 
+
+2) For Use of template engine you have create a folder or directory by name views 
+
+3) create a index.hbs file in the view folder 
+
+4) Set the view engine in index.js file (i.e to know which engine you where using)
+    eg.
+        app.set("view engine","hbs"); // you have write as it is to set the view engine  
+        // if you are using the view engine like pug, ejs, etc. then you have to write ,
+        app.set("view engine" , "pug"); 
+
+5) route the template engine 
+    eg. 
+        app.get("/",(req,res)=>{
+            res.render("filename") // filename = index.hbs or index (it automatically detects the hbs file)
+        })
+
+6) Write the Variable Name where you want to change the value.
+    eg. 
+        <h1>Welcome to the Hbs page My name is {{MyName}}</h1>
+
+7) Setting the variable/props value from the index.js 
+    eg.
+        app.get("/",(req,res)=>{
+            res.render("index.hbs",{
+                MyName : "Rajesh"
+            })
+        })
+    
+    Basically res.render method takes two parameter where to show i.e file name and second is the object of the values 
+    
+
+8) Changing Views directory name to the another directory 
+

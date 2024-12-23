@@ -1,0 +1,52 @@
+----What is Node Js -----
+- Node js is a javascript runtime built on chrome v8 javascript engine.
+- Node.js is a javascript running on the server. 
+
+
+- javascript runtime means environment when code is run and if we make changes in the code it get automatically compile and if there is error it shows error or run the code like react 
+
+- Chrome v8 javascript engine is built to run the javascript on the browser.
+
+* To run the javascript on the server Node JS is used
+
+
+-----------History of Node Js ---------------
+- In 2009 an idea came in the mind of Ryan Dahl (Googe Engineer) that why not run javascript outside browser, so he too V8 engine and embedded in a C++ program and called it Node.exe later on became Node.js 
+
+For Chrome - V8 Engine 
+For Firebox - SpiderMonkey 
+for Safari - Nitro 
+
+
+
+-----------JS Server Fun fact-----------
+In 1995 Netscape written a program called Netscape Enterprise Server which allowed Developer to run Javascript at server side. 
+
+------When to use Node JS------------
+- Node js is single threaded langugage 
+i.e if we the request the first process it will take 10 sec. and again we the request the second process it will take 3 sec. then the second process will exicute in 3 sec and after 7 sec first process will execute 
+- I/O bound 
+it can access multiple request i.e can handle multiple requests 
+- Data streaming Appications 
+it means the application which does not end while scrolling like instagram reels , facebook feeds , etc. 
+- Real time chat application 
+
+
+---------------------------------------Installation---------------
+Install Node from node.org 
+check installation - node -v , npm -v 
+Install vscode editor (IDE)
+create file write code 
+index.js 
+    console.log("hello")
+
+run command :- node index.js 
+
+
+------------------------Prerequisites-----------------------
+
+1) Javascript (basic or advanced)
+2) ES5 & ES6 | ECMAScript 6 | ECMAScript 2015
+ECMAScript 6 is the standardization of Javascript which was released in 2015 and subsequently renamed as ECMAScript 2015
+3) Client server Model (optional)
+for reference - use video tutorial (HTTP vs HTTPS | SSL/TLS | GET vs POST)

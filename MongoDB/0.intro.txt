@@ -1,0 +1,15 @@
+MongoDB 
+    - It is a NoSQL database 
+    - It stores Data in Key Value Pairs.(in the form of documents)
+    - 
+
+
+
+            SQL(MySQL)              |              NoSQL(MongoDB)
+    1. RDBMS is a relational        |   1. It is a non-relational,                                 
+       Database management System   |      document-oriented database 
+       and works on relational      |      management system and works on 
+       database.                    |      document-based database 
+    2. It stores data in the form   |   2. IT stores data in the form 
+       of entity or table           |      of documents 
+    3. It use SQL to query database |   3. MongoDB uses BSON to query database  

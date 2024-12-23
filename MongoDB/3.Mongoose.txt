@@ -1,0 +1,21 @@
+Mongoose :- 
+
+Mongoose is an Object Data Modeling (ODM) library for MongoDB. MongoDB is a NoSQL database and Mongoose is used to interact with MongoDB by providing a schema-based solution. The Mongoose acts as the abstraction layer over the MongoDB database. It is generally preferred over using normal MongoDB because it simplifies the process of sending complex queries.
+
+
+Why Learn Mongoose?
+Mongoose is used in Node application to interact with MongoDB without write complex queries. It acts as an Object Data Modeling (ODM) used to define schema model and provides easy communication between application and database. It provides many features like schema validation, middleware support, and easy query building It manages relationships between data, and is used to translate between objects in code and the representation of those objects in MongoDB.
+
+
+Database Creation :- 
+1) install mongoose 
+    - npm i mongoose 
+2) require the mongoose 
+    - const mongoose = require("mongoose");
+
+3) connect to the database :- 
+    - mongoose.connect("database_url")
+
+    database_url = mongodb://127.0.0.1:27017/database_name
+
+    

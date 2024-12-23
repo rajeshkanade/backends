@@ -1,0 +1,21 @@
+To readData from the collection you have to call the find method 
+It returns the array of an objects 
+
+for example :- 
+// let the collection is Todo 
+
+async function readData () {
+    const result = await Todo.find();
+    console.log(result) // returns all the data from the collections 
+}
+
+// you can also apply condition on the basis of your requirement 
+like taking data of active : true only 
+Then query should be :- Todo.find({active : true})
+
+
+// select the fields like how many fields you want to show
+    query :- Todo.find().select({name : 1, desc : 2}) // it shows two data name and desc 
+
+// select only first or any data of numbers then 
+    query :- Todo.find().select({name : 1 , desc : 2}).limit(1);

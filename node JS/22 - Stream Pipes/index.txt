@@ -1,0 +1,29 @@
+
+Streams are the objects that are read data from the source or write data to the destination in continuous fashion. 
+
+const { EventEmitter } = require("stream")
+
+In node.js there are four types of stream :-
+Streaming means listening to the music or watching the video in the 'real-time', instead of downloading the file to the conmputer and watching it later. 
+
+1) Readable - stream which is used for read the operation.
+
+2) writable - stream which is used for write the operation. 
+
+3) Duplex - stream which can be used for both read or write the operation.
+
+4) transform - a type of duplex stream where the output is computed based on the input.
+
+
+
+----------------------------------------------------------------------------
+
+Each type of stream is an EventEmitter nstance and throws several events at different instance of timeStamp. For exmaple, some of the commonly used events are :-
+
+data - This event is fired when there is data is available to read.
+
+end - This evvennt is fired when there is no more data ot read. 
+
+error - This event is fired when there is any error received or wiriting data.
+
+finish - This event is fired when all the data has been flushed to underlying system.

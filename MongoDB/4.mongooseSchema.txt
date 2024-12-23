@@ -1,0 +1,91 @@
+Database Schema Creation 
+Schema 
+mongoose schema defines the structure of documents 
+
+syntax :-  
+
+const schema_name = mongoose.Schema({
+    // here is the schema 
+    
+})
+
+Example :-
+const playListSchema = mongoose.Schema({
+        name : {
+            type : String,
+            require : true
+        },
+        ctype : String, 
+        videos : Number
+        active : true,
+        date : {
+            type : Date, 
+            default : Date.now
+        }
+})
+
+
+*******************************
+collection Creation 
+
+Model :- 
+
+A Mongoose model is wrapper on the Mongoose Schema. 
+A mongoose schema defines the structure of he documents,
+default values , validators , etc. , whereas a Mongoose model
+provides an interface to the database for creating,
+querying , updating, deleting records, etc.
+
+syntax :- 
+
+    const Model_name = new mongoose.model("collection_name", Schema_name)
+
+   
+Example :- 
+
+    const PlayList = new mongoose.model("PlayList",playListSchema)
+
+
+
+     - here both model_name and collection_name first word should be in capital only 
+
+    - when you run the code then PlayLists collection will be create and the program adds the s as a subscript to the collection name playlist
+
+
+
+**************************
+create or insert document 
+
+Syntax :-
+
+const variable_name = new collection_name({
+    //here is the data
+})
+variable_name.save();
+
+
+
+Example :- 
+const reactPlaylist = new PlayList({
+     name : "React JS",
+     ctype : "FrontEnd", 
+     videos : 80
+     active : true,
+})
+
+reactPlaylist.save();
+
+basically the above method returns the promise if you want to see the error you can write it in try catch block or you can use .then and .catch 
+
+
+reactPlaylist.save().then(())=>{
+    console.log("document added ")
+}
+.catch((err)=>{
+    console.log("there is error while adding the doucment \n" + err)
+})
+
+OR you can also use 
+
+const result = await reactPlaylist.save();
+console.log(result)

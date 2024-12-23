@@ -1,0 +1,18 @@
+--------------repl in node---------
+
+The REPL is the feature of node.js is very userful for experimenting with node.js code and debug javascript code 
+
+R - Reads user input, parses the input into javascript data structure, and store in memory.
+E - takes and evaluates data.
+P - Print and result.
+L - loop the above command until user press Ctrl C twice.
+
+
+Node repl is notting but command prompt for the node i.e node terminal 
+To enable repl in the terminal node command is used. 
+
+
+You can also create file from repl by using command 
+---
+    type nul > index.js (index.js is file name)
+    

@@ -1,0 +1,39 @@
+ update is used to update the records from the collection.
+
+updateOne is older method :- 
+
+  const updateDocuments = async () =>{
+    const result = await Todo.updateOne({_id : '66822099631b1c9c8826b8fa'} , { $set : { title : "Banana"}})
+    console.log(result)
+  }
+
+  updateDocuments();
+
+output :- 
+{
+  acknowledged: true,
+  modifiedCount: 1,
+  upsertedId: null,
+  upsertedCount: 0,
+  matchedCount: 1
+}
+
+
+Now to see the record updated 
+
+  const updateDocuments = async () =>{
+    const result = await Todo.findByIdAndUpdate({_id : "66822099631b1c9c8826b8fa"} , { $set : { title : 'banana'}})
+    console.log(result)
+  }
+
+  updateDocuments();
+
+  output :- 
+{
+  _id: new ObjectId('66822099631b1c9c8826b8fa'),
+  title: 'banana',
+  desc: 'Bring the Apple From market',
+  isDone: false,
+  TotalDone: 0,
+  __v: 0
+}
